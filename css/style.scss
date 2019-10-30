@@ -1,0 +1,264 @@
+body {
+    font-family: 'ヒラギノ丸ゴ ProN W4', 'Hiragino Maru Gothic ProN', "メイリオ", sans-serif;
+    ;
+    overflow: hidden;
+    background-color: #F9F9F9;
+    color: #707070;
+}
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.header {
+    width: 100%;
+    height: 70px;
+    background-color: #191970;
+    position: relative;
+
+    .logo {
+        color: white;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 27px;
+        font-family: "Montserrat";
+        font-style: italic;
+        font-weight: 550;
+        margin: 20px 0 0 20px;
+    }
+}
+
+.top {
+    width: 100%;
+    background-color: #E5F4FD;
+    text-align: center;
+
+    .goal {
+        font-size: 40px;
+        padding: 50px 0 30px 0;
+    }
+
+    .goal-eng {
+        font-size: 24px;
+        padding: 0 0 50px 0;
+    }
+}
+
+.service {
+    width: 100%;
+    background-color: #F9F9F9;
+    text-align: center;
+
+    .title {
+        font-size: 30px;
+        color: #000000;
+        margin: 50px 0 100px 0;
+    }
+
+    .business {
+        font-size: 50px;
+        color: #6495ED;
+        font-family: 'Impact';
+        margin: 0 0 20px 0;
+    }
+
+    .business-explain {
+        font-size: 24px;
+        margin: 0 0 50px 0;
+    }
+}
+
+.company {
+    width: 100%;
+    background-color: #E5F4FD;
+    text-align: center;
+
+    .title {
+        font-size: 30px;
+        color: #000000;
+        padding: 50px 0 100px 0;
+    }
+
+    .company-wrapper {
+        text-align: left;
+
+        .company-sub {
+            font-size: 24px;
+            color: #191970;
+            margin: 0 0 50px 30px;
+        }
+
+        .content {
+            text-align: center;
+            ;
+
+            .content-title {
+                font-size: 24px;
+                color: #000000;
+                margin: 0 0 15px 0;
+            }
+
+            .content-explain {
+                font-size: 16px;
+                line-height: 175%;
+                margin: 0 0 100px 0;
+            }
+        }
+
+        .profile {
+            .profile-wrapper {
+                padding: 0 0 50px 0;
+
+                .about-profile {
+                    width: 80%;
+                    border-collapse: collapse;
+                    margin: 0 auto;
+
+                    tr {
+                        td {
+                            border-top: 1px solid #707070;
+                            border-bottom: 1px solid #707070;
+                            padding: 2em 0;
+                            position: relative;
+
+                            &:first-of-type {
+                                width: 25%;
+
+                                &::before {
+                                    content: "";
+                                    height: 50%;
+                                    border-right: 1px solid #707070;
+                                    position: absolute;
+                                    right: 0;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                }
+                            }
+
+                            &:last-of-type {
+                                padding: 2em 0 2em 2em;
+                            }
+
+                        }
+                    }
+
+                }
+            }
+
+        }
+    }
+
+}
+
+.member {
+    width: 100%;
+    background-color: #F9F9F9;
+    text-align: center;
+
+    .title {
+        font-size: 30px;
+        color: #000000;
+        padding: 50px 0 100px 0;
+    }
+
+    .member-detail {
+        img {
+            width: 300px;
+            height: 350px;
+        }
+
+        .name {
+            font-size: 30px;
+            color: #000000;
+        }
+
+        .romaji,
+        .position,
+        .affiliation {
+            font-size: 18px;
+            color: #707070;
+        }
+
+        .affiliation {
+            padding: 0 0 40px 0;
+        }
+    }
+}
+
+.footer {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    background-color: #191970;
+
+    .copyright {
+        font-size: 14px;
+        color: white;
+        padding: 10px 0 0 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .company {
+        .company-wrapper {
+            text-align: center;
+        }
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .company {
+        .company-wrapper {
+            .company-sub {
+                margin: 0 0 50px 0;
+            }
+        }
+    }
+
+    .member {
+        position: relative;
+        padding-bottom: 45%;
+
+        #CEO {
+            position: absolute;
+            left: 0;
+        }
+
+        #COO {
+            position: absolute;
+            left: 34%;
+        }
+
+        #CTO {
+            position: absolute;
+            left: 68%;
+        }
+
+        .member-detail {
+            width: 33%;
+
+            .name,
+            .romaji,
+            .position,
+            .affiliation {
+                //    display: inline-block;
+                margin: 0;
+            }
+        }
+    }
+}
