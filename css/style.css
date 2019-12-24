@@ -155,13 +155,10 @@ ul {
     padding-bottom: 45%; }
     .member #CEO {
       position: absolute;
-      left: 0; }
-    .member #COO {
-      position: absolute;
-      left: 34%; }
+      left: 15%; }
     .member #CTO {
       position: absolute;
-      left: 68%; }
+      left: 52%; }
     .member .member-detail {
       width: 33%; }
       .member .member-detail .name,
