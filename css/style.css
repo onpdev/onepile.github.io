@@ -1,170 +1,246 @@
 @charset "UTF-8";
 body {
-  font-family: 'ヒラギノ丸ゴ ProN W4', 'Hiragino Maru Gothic ProN', "メイリオ", sans-serif;
+  font-family: "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", "メイリオ", sans-serif;
   overflow: hidden;
   background-color: #F9F9F9;
-  color: #707070; }
+  color: #707070;
+}
 
 a,
 a:link,
 a:visited {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 ul {
-  list-style: none; }
+  list-style: none;
+}
 
 .clearfix::after {
   content: "";
   display: block;
-  clear: both; }
+  clear: both;
+}
 
 .header {
   width: 100%;
   height: 70px;
   background-color: #191970;
-  position: relative; }
-  .header .logo {
-    color: white;
-    display: inline-block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    font-size: 27px;
-    font-family: "Montserrat";
-    font-style: italic;
-    font-weight: 550;
-    margin: 20px 0 0 20px; }
+  position: relative;
+}
+.header .logo {
+  color: white;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 27px;
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 550;
+  margin: 20px 0 0 20px;
+}
 
 .top {
   width: 100%;
   background-color: #E5F4FD;
-  text-align: center; }
-  .top .goal {
-    font-size: 40px;
-    padding: 50px 0 30px 0; }
-  .top .goal-eng {
-    font-size: 24px;
-    padding: 0 0 50px 0; }
+  text-align: center;
+}
+.top .goal {
+  font-size: 40px;
+  padding: 50px 0 30px 0;
+}
+.top .goal-eng {
+  font-size: 24px;
+  padding: 0 0 50px 0;
+}
 
 .service {
   width: 100%;
   background-color: #F9F9F9;
-  text-align: center; }
-  .service .title {
-    font-size: 30px;
-    color: #000000;
-    margin: 50px 0 100px 0; }
-  .service .business {
-    font-size: 50px;
-    color: #6495ED;
-    font-family: 'Impact';
-    margin: 0 0 20px 0; }
-  .service .business-explain {
-    font-size: 24px;
-    margin: 0 0 50px 0; }
+  text-align: center;
+}
+.service .title {
+  font-size: 30px;
+  color: #000000;
+  padding: 50px 0 100px 0;
+}
+.service .service-detail a, .service .service-detail a:visited {
+  color: #000000;
+}
+.service .service-detail a:hover {
+  text-decoration: underline;
+}
+.service .service-detail .service-image {
+  margin-bottom: 40px;
+}
+.service .service-detail .service-image img {
+  width: 300px;
+}
+.service .service-detail .name {
+  font-size: 20px;
+  color: #000000;
+}
+.service .service-detail .description {
+  font-size: 14px;
+  color: #707070;
+}
+.service .service-detail .description {
+  padding: 0 0 40px 0;
+}
+.service .business {
+  font-size: 50px;
+  color: #6495ED;
+  font-family: "Impact";
+  margin: 0 0 20px 0;
+}
+.service .business-explain {
+  font-size: 24px;
+  margin: 0 0 50px 0;
+}
 
 .company {
   width: 100%;
   background-color: #E5F4FD;
-  text-align: center; }
-  .company .title {
-    font-size: 30px;
-    color: #000000;
-    padding: 50px 0 100px 0; }
-  .company .company-wrapper {
-    text-align: left; }
-    .company .company-wrapper .company-sub {
-      font-size: 24px;
-      color: #191970;
-      margin: 0 0 50px 30px; }
-    .company .company-wrapper .content {
-      text-align: center; }
-      .company .company-wrapper .content .content-title {
-        font-size: 24px;
-        color: #000000;
-        margin: 0 0 15px 0; }
-      .company .company-wrapper .content .content-explain {
-        font-size: 16px;
-        line-height: 175%;
-        margin: 0 0 100px 0; }
-    .company .company-wrapper .profile .profile-wrapper {
-      padding: 0 0 50px 0; }
-      .company .company-wrapper .profile .profile-wrapper .about-profile {
-        width: 80%;
-        border-collapse: collapse;
-        margin: 0 auto; }
-        .company .company-wrapper .profile .profile-wrapper .about-profile tr td {
-          border-top: 1px solid #707070;
-          border-bottom: 1px solid #707070;
-          padding: 2em 0;
-          position: relative; }
-          .company .company-wrapper .profile .profile-wrapper .about-profile tr td:first-of-type {
-            width: 25%; }
-            .company .company-wrapper .profile .profile-wrapper .about-profile tr td:first-of-type::before {
-              content: "";
-              height: 50%;
-              border-right: 1px solid #707070;
-              position: absolute;
-              right: 0;
-              top: 50%;
-              transform: translateY(-50%); }
-          .company .company-wrapper .profile .profile-wrapper .about-profile tr td:last-of-type {
-            padding: 2em 0 2em 2em; }
+  text-align: center;
+}
+.company .title {
+  font-size: 30px;
+  color: #000000;
+  padding: 50px 0 100px 0;
+}
+.company .company-wrapper {
+  text-align: left;
+}
+.company .company-wrapper .company-sub {
+  font-size: 24px;
+  color: #191970;
+  margin: 0 0 50px 30px;
+}
+.company .company-wrapper .content {
+  text-align: center;
+}
+.company .company-wrapper .content .content-title {
+  font-size: 24px;
+  color: #000000;
+  margin: 0 0 15px 0;
+}
+.company .company-wrapper .content .content-explain {
+  font-size: 16px;
+  line-height: 175%;
+  margin: 0 0 100px 0;
+}
+.company .company-wrapper .profile .profile-wrapper {
+  padding: 0 0 50px 0;
+}
+.company .company-wrapper .profile .profile-wrapper .about-profile {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+.company .company-wrapper .profile .profile-wrapper .about-profile tr td {
+  border-top: 1px solid #707070;
+  border-bottom: 1px solid #707070;
+  padding: 2em 0;
+  position: relative;
+}
+.company .company-wrapper .profile .profile-wrapper .about-profile tr td:first-of-type {
+  width: 25%;
+}
+.company .company-wrapper .profile .profile-wrapper .about-profile tr td:first-of-type::before {
+  content: "";
+  height: 50%;
+  border-right: 1px solid #707070;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.company .company-wrapper .profile .profile-wrapper .about-profile tr td:last-of-type {
+  padding: 2em 0 2em 2em;
+}
 
 .member {
   width: 100%;
   background-color: #F9F9F9;
-  text-align: center; }
-  .member .title {
-    font-size: 30px;
-    color: #000000;
-    padding: 50px 0 100px 0; }
-  .member .member-detail img {
-    width: 300px;
-    height: 350px; }
-  .member .member-detail .name {
-    font-size: 30px;
-    color: #000000; }
-  .member .member-detail .romaji,
-  .member .member-detail .position,
-  .member .member-detail .affiliation {
-    font-size: 18px;
-    color: #707070; }
-  .member .member-detail .affiliation {
-    padding: 0 0 40px 0; }
+  text-align: center;
+}
+.member .title {
+  font-size: 30px;
+  color: #000000;
+  padding: 50px 0 100px 0;
+}
+.member .member-detail img {
+  width: 300px;
+}
+.member .member-detail .name {
+  font-size: 30px;
+  color: #000000;
+}
+.member .member-detail .romaji,
+.member .member-detail .position,
+.member .member-detail .affiliation {
+  font-size: 18px;
+  color: #707070;
+}
+.member .member-detail .affiliation {
+  padding: 0 0 40px 0;
+}
 
 .footer {
   width: 100%;
   height: 70px;
   text-align: center;
-  background-color: #191970; }
-  .footer .copyright {
-    font-size: 14px;
-    color: white;
-    padding: 10px 0 0 0; }
+  background-color: #191970;
+}
+.footer .copyright {
+  font-size: 14px;
+  color: white;
+  padding: 10px 0 0 0;
+}
 
 @media screen and (min-width: 768px) {
   .company .company-wrapper {
-    text-align: center; } }
+    text-align: center;
+  }
+}
 @media screen and (min-width: 1024px) {
   .company .company-wrapper .company-sub {
-    margin: 0 0 50px 0; }
+    margin: 0 0 50px 0;
+  }
+
+  .service {
+    position: relative;
+  }
+  .service .magne-detail {
+    width: 33%;
+  }
+  .service .magne-detail .name,
+.service .magne-detail .description {
+    margin: 0;
+  }
 
   .member {
     position: relative;
-    padding-bottom: 45%; }
-    .member #CEO {
-      position: absolute;
-      left: 15%; }
-    .member #CTO {
-      position: absolute;
-      left: 52%; }
-    .member .member-detail {
-      width: 33%; }
-      .member .member-detail .name,
-      .member .member-detail .romaji,
-      .member .member-detail .position,
-      .member .member-detail .affiliation {
-        margin: 0; } }
+    padding-bottom: 60%;
+  }
+  .member #CEO {
+    position: absolute;
+    left: 15%;
+  }
+  .member #CTO {
+    position: absolute;
+    left: 52%;
+  }
+  .member .member-detail {
+    width: 33%;
+  }
+  .member .member-detail .name,
+.member .member-detail .romaji,
+.member .member-detail .position,
+.member .member-detail .affiliation {
+    margin: 0;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

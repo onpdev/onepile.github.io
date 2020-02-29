@@ -66,7 +66,40 @@ ul {
     .title {
         font-size: 30px;
         color: #000000;
-        margin: 50px 0 100px 0;
+        padding: 50px 0 100px 0;
+    }
+
+    .service-detail {
+
+        a, a:visited {
+            color :  #000000;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .service-image{
+            margin-bottom: 40px;
+
+            img {
+                width: 300px;
+            }
+        }
+
+        .name {
+            font-size: 20px;
+            color: #000000;
+        }
+
+        .description {
+            font-size: 14px;
+            color: #707070;
+        }
+
+        .description {
+            padding: 0 0 40px 0;
+        }
     }
 
     .business {
@@ -81,6 +114,30 @@ ul {
         margin: 0 0 50px 0;
     }
 }
+
+// .service {
+//     width: 100%;
+//     background-color: #F9F9F9;
+//     text-align: center;
+
+//     .title {
+//         font-size: 30px;
+//         color: #000000;
+//         margin: 50px 0 100px 0;
+//     }
+
+//     .business {
+//         font-size: 50px;
+//         color: #6495ED;
+//         font-family: 'Impact';
+//         margin: 0 0 20px 0;
+//     }
+
+//     .business-explain {
+//         font-size: 24px;
+//         margin: 0 0 50px 0;
+//     }
+// }
 
 .company {
     width: 100%;
@@ -178,7 +235,7 @@ ul {
     .member-detail {
         img {
             width: 300px;
-            height: 350px;
+            // height: 350px;
         }
 
         .name {
@@ -230,9 +287,33 @@ ul {
         }
     }
 
+    .service {
+        position: relative;
+
+        // #magne {
+        //     position: absolute;
+        //     left: 15%;
+        // }
+
+        // #magne2 {
+        //     position: absolute;
+        //     left: 52%;
+        // }
+
+        .magne-detail {
+            width: 33%;
+
+            .name,
+            .description {
+                //    display: inline-block;
+                margin: 0;
+            }
+        }
+    }
+
     .member {
         position: relative;
-        padding-bottom: 45%;
+        padding-bottom: 60%;
 
         #CEO {
             position: absolute;
