@@ -195,6 +195,10 @@ ul {
   .company .company-wrapper {
     text-align: center;
   }
+
+  .service .service-image #magne {
+    width: 70%;
+  }
 }
 @media screen and (min-width: 1024px) {
   .company .company-wrapper .company-sub {
@@ -203,6 +207,9 @@ ul {
 
   .service {
     position: relative;
+  }
+  .service .service-image #magne {
+    width: 60%;
   }
   .service .magne-detail {
     width: 33%;

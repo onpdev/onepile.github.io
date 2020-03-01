@@ -278,6 +278,14 @@ ul {
         }
     }
 
+    .service {
+        .service-image{
+            #magne {
+                width: 70%;
+            }
+        }
+    }
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -301,6 +309,12 @@ ul {
         //     position: absolute;
         //     left: 52%;
         // }
+
+        .service-image{
+            #magne {
+                width: 60%;
+            }
+        }
 
         .magne-detail {
             width: 33%;
